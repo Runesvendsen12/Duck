@@ -17,5 +17,11 @@ public class MiniDuckSim {
         redhead.display();
         redhead.performFly();
         redhead.performQuack();
+
+        System.out.println("new redhead model duck: ");
+
+        Duck redheadmodel = new RedheadDuck();
+        redheadmodel.display();
+        redheadmodel.setQuackBehavior(new MuteQuack());
     }
 }
